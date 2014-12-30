@@ -7,6 +7,7 @@
 					<xs:element ref="sum"/>
 					<xs:element ref="difference"/>
 					<xs:element ref="sqrt"/>
+					<xs:element ref="sqr"/>
 				</xs:choice>
 			</xs:sequence>
 		</xs:complexType>
@@ -14,4 +15,5 @@
 	<xs:element name="sum" type="xs:integer"/>
 	<xs:element name="difference" type="xs:integer"/>
 	<xs:element name="sqrt" type="xs:float"/>
+	<xs:element name="sqr" type="xs:float"/>
 </xs:schema>
