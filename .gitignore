@@ -1,4 +1,6 @@
 *.log
 *.jar
 *.prj
-libxml2/*/*
+libxml2/bin/*
+libxml2/include/*
+libxml2/lib/*
