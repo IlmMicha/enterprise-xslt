@@ -13,7 +13,14 @@ This sample calculates the absolute value of a number
 			<xsl:for-each select="input/item">
 				<item>
 					<abs>
-						<xsl:value-of select="number * (number &gt; 0) - number * (number &lt; 0)"/>
+						<xsl:choose>
+							<xsl:when test="number &gt; 0">
+								<xsl:value-of select="number"/>
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:value-of select="number * -1"/>
+							</xsl:otherwise>
+						</xsl:choose>
 					</abs>
 				</item>
 			</xsl:for-each>
