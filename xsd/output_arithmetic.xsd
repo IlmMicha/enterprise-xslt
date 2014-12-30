@@ -8,6 +8,7 @@
 					<xs:element ref="difference"/>
 					<xs:element ref="sqrt"/>
 					<xs:element ref="sqr"/>
+					<xs:element ref="reciprocal"/>
 					<xs:element ref="result" maxOccurs="unbounded"/>
 				</xs:choice>
 			</xs:sequence>
@@ -17,5 +18,6 @@
 	<xs:element name="difference" type="xs:integer"/>
 	<xs:element name="sqrt" type="xs:float"/>
 	<xs:element name="sqr" type="xs:float"/>
+	<xs:element name="reciprocal" type="xs:float"/>
 	<xs:element name="result" type="xs:string"/>
 </xs:schema>
