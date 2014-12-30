@@ -6,6 +6,8 @@
 				<xs:choice>
 					<xs:element ref="difference"/>
 					<xs:element ref="item" maxOccurs="unbounded"/>
+					<xs:element ref="max"/>
+					<xs:element ref="min"/>
 					<xs:element ref="neg"/>
 					<xs:element ref="power"/>
 					<xs:element ref="product"/>
@@ -32,6 +34,8 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+	<xs:element name="max" type="xs:float"/>
+	<xs:element name="min" type="xs:float"/>
 	<xs:element name="neg" type="xs:float"/>
 	<xs:element name="power" type="xs:integer"/>
 	<xs:element name="product" type="xs:float"/>
