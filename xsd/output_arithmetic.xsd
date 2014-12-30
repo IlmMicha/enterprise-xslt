@@ -13,6 +13,7 @@
 					<xs:element ref="quotient"/>
 					<xs:element ref="product"/>
 					<xs:element ref="item" maxOccurs="unbounded"/>
+					<xs:element ref="neg"/>
 				</xs:choice>
 			</xs:sequence>
 		</xs:complexType>
@@ -35,4 +36,5 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+	<xs:element name="neg" type="xs:float"/>
 </xs:schema>
