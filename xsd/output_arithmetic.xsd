@@ -10,6 +10,8 @@
 					<xs:element ref="sqr"/>
 					<xs:element ref="reciprocal"/>
 					<xs:element ref="power"/>
+					<xs:element ref="quotient"/>
+					<xs:element ref="product"/>
 					<xs:element ref="item" maxOccurs="unbounded"/>
 				</xs:choice>
 			</xs:sequence>
@@ -21,10 +23,15 @@
 	<xs:element name="sqr" type="xs:float"/>
 	<xs:element name="reciprocal" type="xs:float"/>
 	<xs:element name="power" type="xs:integer"/>
+	<xs:element name="quotient" type="xs:float"/>
+	<xs:element name="product" type="xs:float"/>
 	<xs:element name="item">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="boolean"/>
+				<xs:choice>
+					<xs:element name="boolean" type="xs:boolean"/>
+					<xs:element name="abs" type="xs:integer"/>
+				</xs:choice>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>

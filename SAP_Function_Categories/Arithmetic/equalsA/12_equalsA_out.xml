@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><output>
-  <result>47 = 12 false</result>
-  <result>3 = 3 true</result>
-  <result>1.5 = 1.50 true</result>
+  <item>
+    <boolean>false</boolean>
+  </item>
+  <item>
+    <boolean>true</boolean>
+  </item>
+  <item>
+    <boolean>true</boolean>
+  </item>
 </output>
