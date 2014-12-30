@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><output>
+  <item>
+    <ceil>43</ceil>
+  </item>
+  <item>
+    <ceil>42</ceil>
+  </item>
+  <item>
+    <ceil>-42</ceil>
+  </item>
+</output>

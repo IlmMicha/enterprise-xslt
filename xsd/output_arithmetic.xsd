@@ -4,37 +4,39 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:choice>
-					<xs:element ref="sum"/>
 					<xs:element ref="difference"/>
-					<xs:element ref="sqrt"/>
-					<xs:element ref="sqr"/>
-					<xs:element ref="reciprocal"/>
-					<xs:element ref="power"/>
-					<xs:element ref="quotient"/>
-					<xs:element ref="product"/>
 					<xs:element ref="item" maxOccurs="unbounded"/>
 					<xs:element ref="neg"/>
+					<xs:element ref="power"/>
+					<xs:element ref="product"/>
+					<xs:element ref="quotient"/>
+					<xs:element ref="reciprocal"/>
+					<xs:element ref="sqr"/>
+					<xs:element ref="sqrt"/>
+					<xs:element ref="sum"/>
 				</xs:choice>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="sum" type="xs:integer"/>
 	<xs:element name="difference" type="xs:integer"/>
-	<xs:element name="sqrt" type="xs:float"/>
-	<xs:element name="sqr" type="xs:float"/>
-	<xs:element name="reciprocal" type="xs:float"/>
-	<xs:element name="power" type="xs:integer"/>
-	<xs:element name="quotient" type="xs:float"/>
-	<xs:element name="product" type="xs:float"/>
 	<xs:element name="item">
 		<xs:complexType>
 			<xs:sequence>
 				<xs:choice>
-					<xs:element name="boolean" type="xs:boolean"/>
 					<xs:element name="abs" type="xs:integer"/>
+					<xs:element name="ceil" type="xs:integer"/>
+					<xs:element name="floor" type="xs:integer"/>
+					<xs:element name="boolean" type="xs:boolean"/>
 				</xs:choice>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="neg" type="xs:float"/>
+	<xs:element name="power" type="xs:integer"/>
+	<xs:element name="product" type="xs:float"/>
+	<xs:element name="quotient" type="xs:float"/>
+	<xs:element name="reciprocal" type="xs:float"/>
+	<xs:element name="sqr" type="xs:float"/>
+	<xs:element name="sqrt" type="xs:float"/>
+	<xs:element name="sum" type="xs:integer"/>
 </xs:schema>
