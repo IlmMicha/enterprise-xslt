@@ -29,6 +29,7 @@
 					<xs:element name="boolean" type="xs:boolean"/>
 					<xs:element name="ceil" type="xs:integer"/>
 					<xs:element name="floor" type="xs:integer"/>
+					<xs:element name="formated" type="xs:string"/>
 					<xs:element name="round" type="xs:integer"/>
 				</xs:choice>
 			</xs:sequence>

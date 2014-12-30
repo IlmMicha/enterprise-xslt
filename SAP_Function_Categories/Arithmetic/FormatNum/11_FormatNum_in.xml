@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input>
+	<item>
+		<number>42000.1</number>
+	</item>
+	<item>
+		<number>42000</number>
+	</item>
+	<item>
+		<number>-42000.1</number>
+	</item>
+</input>
