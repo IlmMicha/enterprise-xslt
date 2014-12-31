@@ -16,4 +16,4 @@ rm "$targetfile" 2> /dev/null
 # transform input message using Xalan XSLTC processor
 java -cp "../../../lib/xalan.jar" org.apache.xalan.xslt.Process -XSLTC -XSL "$mappingfile" -IN "$sourcefile" -OUT "$targetfile" 2> "$logfile"
 # validate output message using third party vaildation utility
-xmllint --schema ../../../xsd/output_arithmetic.xsd "$samplenumber"2_"$functionname"_out.xml 2>> "$logfile"
+xmllint --schema ../../../xsd/output_arithmetic.xsd "$targetfile" 2>> "$logfile"

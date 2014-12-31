@@ -14,4 +14,4 @@ del %targetfile% 2> nul
 :: transform input message using Xalan XSLTC processor
 java.exe -cp "..\..\..\lib\xalan.jar" org.apache.xalan.xslt.Process -XSLTC -XSL %mappingfile% -IN %sourcefile% -OUT %targetfile% 2> %logfile%
 :: validate output message using third party vaildation utility
-..\..\..\libxml2\bin\xmllint.exe --schema ..\..\..\xsd\output_arithmetic.xsd %samplenumber%2_%functionname%_out.xml 2>> %logfile%
+..\..\..\libxml2\bin\xmllint.exe --schema ..\..\..\xsd\output_arithmetic.xsd %targetfile% 2>> %logfile%
